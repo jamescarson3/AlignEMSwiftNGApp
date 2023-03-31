@@ -188,28 +188,25 @@ echo "Updating conda..."
 conda update conda -y
 
 #echo "Checking if AlignEM-SWiFT exists in $WORK..."
-#if [ ! -d "$WORK/swift-ir" ]; then
-#  echo "AlignEM-SWiFT not found in $WORK..."
-#  git clone https://github.com/mcellteam/swift-ir.git
-#fi
-
-echo "Cloning AlignEM-SWiFT v0.5.1"
-git clone https://github.com/mcellteam/swift-ir/tree/v0.5.1
+if [ ! -d "$WORK/swift-ir" ]; then
+  echo "AlignEM-SWiFT not found in $WORK..."
+  git clone https://github.com/mcellteam/swift-ir.git
+fi
 
 echo "Changing directory to swift-ir..."
 cd $WORK/swift-ir
 
-#echo "Checking out development_ng branch..."
-#git checkout development_ng
-#git pull
+echo "Checking out 0.5.3 branch..."
+git checkout v0.5.3
+git pull
 
-#echo "Purging modules..."
-#module purge
+echo "Purging modules..."
+module purge
 
-#echo "cd'ing to swift-ir and pulling changes..."
-#cd $WORK/swift-ir
-#git stash
-#git pull --ff-only
+echo "cd'ing to swift-ir and pulling changes..."
+cd $WORK/swift-ir
+git stash
+git pull --ff-only
 
 echo "Activating conda environment..."
 conda activate /work/08507/joely/ls6/miniconda3/envs/alignTACC1024

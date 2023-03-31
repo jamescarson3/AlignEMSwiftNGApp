@@ -1,7 +1,7 @@
 Description:
 -----------------------
 
-This application will allow a user to submit a job on the [Texas Advanced Computing Center (TACC)](https://www.tacc.utexas.edu/) [Lonestar6 Supercomputer](https://www.tacc.utexas.edu/systems/lonestar6) to utilize [AlignEM-SWiFT](https://github.com/mcellteam/swift-ir) version 0.5.1; an implementation of SWiFT-IR (Signal Whitening Fourier Transform Image Registration), developed by Art Wetzel, Tom Bartol, and Bob Kuczewski.
+This application will allow a user to submit a job on the [Texas Advanced Computing Center (TACC)](https://www.tacc.utexas.edu/) [Lonestar6 Supercomputer](https://www.tacc.utexas.edu/systems/lonestar6) to utilize [AlignEM-SWiFT](https://github.com/mcellteam/swift-ir) version 0.5.3; an implementation of SWiFT-IR (Signal Whitening Fourier Transform Image Registration), developed by Art Wetzel, Tom Bartol, and Bob Kuczewski.
 
 Running the Application:
 -----------------------
