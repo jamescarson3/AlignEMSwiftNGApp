@@ -196,8 +196,8 @@ fi
 echo "Changing directory to swift-ir..."
 cd $WORK/swift-ir
 
-echo "Checking out 0.5.3 branch..."
-git checkout v0.5.3
+echo "Checking out 0.5.441 branch..."
+git checkout v0.5.441
 git pull
 
 echo "Purging modules..."
